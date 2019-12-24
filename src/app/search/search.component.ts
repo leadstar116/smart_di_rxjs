@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SearchService } from './search.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private searchService: SearchService,
+              private router: Router) { }
 
   ngOnInit() {
   }
 
+  searchStringChangeHandler(event: any) {
+    this.searchService.setSearchString(event.target.value);
+  }
+
+  searchTypeChangeHandler(event: any) {
+    if(event.target.value == 'Google') {
+      this.router.navigate(['/google']);
+    } else {
+      this.router.navigate(['/bing']);
+    }
+  }
 }

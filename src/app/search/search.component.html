@@ -1,1 +1,10 @@
-<p>search works!</p>
+<h1>Search Component</h1>
+<div>
+    <div>
+        <label for="">Search for: </label>
+        <input type="text" (keyup)="searchStringChangeHandler($event)" />
+    </div>
+    <br>
+    <input type="radio" name="search_type" value="Google" (change)="searchTypeChangeHandler($event)"/> Google
+    <input type="radio" name="search_type" value="Bing" (change)="searchTypeChangeHandler($event)"/> Bing
+</div>

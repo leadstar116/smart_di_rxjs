@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { GoogleResultComponent } from './google-result/google-result.component';
 import { BingResultComponent } from './bing-result/bing-result.component';
+import { SearchService } from './search/search.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { BingResultComponent } from './bing-result/bing-result.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
