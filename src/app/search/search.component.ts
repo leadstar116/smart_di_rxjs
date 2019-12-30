@@ -22,8 +22,10 @@ export class SearchComponent implements OnInit {
   searchTypeChangeHandler(event: any) {
     if(event.target.value == 'Google') {
       this.router.navigate(['/google']);
-    } else {
+    } else if(event.target.value == 'Bing') {
       this.router.navigate(['/bing']);
+    } else if(event.target.value == 'Yandex') {
+      this.router.navigate(['/yandex']);
     }
   }
 }

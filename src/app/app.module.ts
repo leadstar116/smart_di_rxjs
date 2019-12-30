@@ -7,13 +7,15 @@ import { SearchComponent } from './search/search.component';
 import { GoogleResultComponent } from './google-result/google-result.component';
 import { BingResultComponent } from './bing-result/bing-result.component';
 import { SearchService } from './search/search.service';
+import { YandexResultComponent } from './yandex-result/yandex-result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
     GoogleResultComponent,
-    BingResultComponent
+    BingResultComponent,
+    YandexResultComponent
   ],
   imports: [
     BrowserModule,
