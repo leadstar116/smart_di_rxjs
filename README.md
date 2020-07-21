@@ -1,4 +1,13 @@
-# SmartTest
+# Simple Angular App using RxJS state management 
+
+## Project Details
+Created an angular 7 project with 3 components. <br/>
+Search component that accepts a form input field, and two radio buttons(see diagram below).  <br/>
+The user enters a search string and based on the radio selection either a Bing Results Component or Google Results Component will be loaded onto the page via DI. <br/>
+When the Search string is entered,  State Service would be notified and either Bing/Google will be loaded via the <router-outlet> with a simple text “this is the (bing/google) component. <br/>
+This component can be used for any search service. Easy for extendable. <br/>
+
+## Project created by Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
